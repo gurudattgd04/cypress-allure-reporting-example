@@ -1,0 +1,26 @@
+{
+  "name": "cypress-allure-reporting-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gurudattgd04/cypress-allure-reporting-example.git"
+  },
+  "dependencies": {
+    "cypress": "13.7.0"
+  },
+  "devDependencies": {
+    "allure-commandline": "2.27.0",
+    "allure-cypress": "2.14.1"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gurudattgd04/cypress-allure-reporting-example/issues"
+  },
+  "homepage": "https://github.com/gurudattgd04/cypress-allure-reporting-example#readme"
+}
