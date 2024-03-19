@@ -1,0 +1,11 @@
+strategy:
+  fail-fast: false
+  matrix:
+    containers: [1,2,3]
+  steps:
+    - name: Run Cypress Tests Split
+      uses: cypress-io/github-action@v6
+
+      env:
+        SPLIT: ${{ strategy.job-total }}
+        SPLIT_INDEX: ${{strategy.job-index}}
