@@ -9,6 +9,15 @@ jobs:
       matrix:
         containers: [1, 2, 3]
     steps:
+      - name: Checkout 🛎
+        uses: actions/checkout@v4
+
+      - name: Print GitHub variables 🖨
+        run: npx @bahmutov/print-env GITHUB
+
+      - name: Print GitHub strategy context 🖨
+        run: echo '${{ toJSON(strategy) }}'
+
       - name: Run Cypress Tests Split
         uses: cypress-io/github-action@v6
 
